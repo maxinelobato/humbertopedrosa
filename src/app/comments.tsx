@@ -10,10 +10,10 @@ import {
   Avatar,
   VStack,
   SimpleGrid,
-  IconButton,
 } from '@chakra-ui/react';
-import { ArrowCircleLeft, ArrowCircleRight, Heart, Quotes, Star } from 'phosphor-react';
-import Slider from 'react-slick';
+import { Heart, Quotes, Star } from 'phosphor-react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Autoplay, Navigation } from 'swiper';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
   return <Box>{children}</Box>;
@@ -75,23 +75,7 @@ const ReviewsGoogle = {
   rating: 5,
 };
 
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: true,
-  slidesToScroll: true,
-  arrows: false,
-  fade: true,
-  autoplay: true,
-  autoplaySpeed: 5000,
-};
-
 export function Comments() {
-  const [slider, setSlider] = React.useState<Slider | null>(null);
-  const top = '30%';
-  const side = '0%';
-
   return (
     <>
       <Container maxW={'6xl'} py={16} as={Stack} spacing={12}>
@@ -135,175 +119,143 @@ export function Comments() {
           direction={{ base: 'column', md: 'column' }}
           spacing={{ base: 10, md: 4, lg: 10 }}
         >
-          <Box position={'relative'} overflow={'hidden'}>
-            {/* CSS files for react-slick */}
-            <link
-              rel="stylesheet"
-              type="text/css"
-              charSet="UTF-8"
-              href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-            />
-            <link
-              rel="stylesheet"
-              type="text/css"
-              href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-            />
-            {/* Left Icon */}
-            <IconButton
-              aria-label="left-arrow"
-              variant="ghost"
-              position="absolute"
-              left={side}
-              top={top}
-              transform={'translate(0%, -50%)'}
-              zIndex={2}
-              onClick={() => slider?.slickPrev()}
-            >
-              <ArrowCircleLeft size={36} weight="fill" />
-            </IconButton>
-            {/* Right Icon */}
-            <IconButton
-              aria-label="right-arrow"
-              variant="ghost"
-              position="absolute"
-              right={side}
-              top={top}
-              transform={'translate(0%, -50%)'}
-              zIndex={2}
-              onClick={() => slider?.slickNext()}
-            >
-              <ArrowCircleRight size={36} weight="fill" />
-            </IconButton>
-            <Slider {...settings} ref={(slider) => setSlider(slider)}>
-              <Box p={4}>
-                <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-                  <Testimonial>
-                    <TestimonialContent>
-                      <Quotes size={28} weight="fill" />
-                      <Box display="flex" mt="2" alignItems="center">
-                        {Array(5)
-                          .fill('')
-                          .map((_, i) => (
-                            <Star
-                              weight="fill"
-                              key={i}
-                              color={i < ReviewsGoogle.rating ? '#FBBC04' : 'gray'}
-                            />
-                          ))}
-                      </Box>
-                      <TestimonialText>Ótimo atendimento</TestimonialText>
-                    </TestimonialContent>
-                    <TestimonialAvatar src={''} name={'Nilza Silva'} />
-                  </Testimonial>
-                  <Testimonial>
-                    <TestimonialContent>
-                      <Quotes size={28} weight="fill" />
-                      <Box display="flex" mt="2" alignItems="center">
-                        {Array(5)
-                          .fill('')
-                          .map((_, i) => (
-                            <Star
-                              weight="fill"
-                              key={i}
-                              color={i < ReviewsGoogle.rating ? '#FBBC04' : 'gray'}
-                            />
-                          ))}
-                      </Box>
-                      <TestimonialText>Advogado de excelência!</TestimonialText>
-                    </TestimonialContent>
-                    <TestimonialAvatar src={''} name={'Rosangela Rocha Alves'} />
-                  </Testimonial>
-                  <Testimonial>
-                    <TestimonialContent>
-                      <Quotes size={28} weight="fill" />
-                      <Box display="flex" mt="2" alignItems="center">
-                        {Array(5)
-                          .fill('')
-                          .map((_, i) => (
-                            <Star
-                              weight="fill"
-                              key={i}
-                              color={i < ReviewsGoogle.rating ? '#FBBC04' : 'gray'}
-                            />
-                          ))}
-                      </Box>
-                      <TestimonialText>
-                        Super indico. Problema solucionado!
-                      </TestimonialText>
-                    </TestimonialContent>
-                    <TestimonialAvatar src={''} name={'Edileia Lopes'} />
-                  </Testimonial>
-                </SimpleGrid>
-              </Box>
-              <Box p={4}>
-                <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-                  <Testimonial>
-                    <TestimonialContent>
-                      <Quotes size={28} weight="fill" />
-                      <Box display="flex" mt="2" alignItems="center">
-                        {Array(5)
-                          .fill('')
-                          .map((_, i) => (
-                            <Star
-                              weight="fill"
-                              key={i}
-                              color={i < ReviewsGoogle.rating ? '#FBBC04' : 'gray'}
-                            />
-                          ))}
-                      </Box>
-                      <TestimonialText>
-                        Excelência e qualidade no atendimento , recomendo sem duvidas.
-                      </TestimonialText>
-                    </TestimonialContent>
-                    <TestimonialAvatar src={''} name={'Renan Araujo Films'} />
-                  </Testimonial>
-                  <Testimonial>
-                    <TestimonialContent>
-                      <Quotes size={28} weight="fill" />
-                      <Box display="flex" mt="2" alignItems="center">
-                        {Array(5)
-                          .fill('')
-                          .map((_, i) => (
-                            <Star
-                              weight="fill"
-                              key={i}
-                              color={i < ReviewsGoogle.rating ? '#FBBC04' : 'gray'}
-                            />
-                          ))}
-                      </Box>
-                      <TestimonialText>
-                        Muito bom atendimento diferenciado um excelente profissional
-                        amei
-                      </TestimonialText>
-                    </TestimonialContent>
-                    <TestimonialAvatar src={''} name={'Gi Gospel'} />
-                  </Testimonial>
-                  <Testimonial>
-                    <TestimonialContent>
-                      <Quotes size={28} weight="fill" />
-                      <Box display="flex" mt="2" alignItems="center">
-                        {Array(5)
-                          .fill('')
-                          .map((_, i) => (
-                            <Star
-                              weight="fill"
-                              key={i}
-                              color={i < ReviewsGoogle.rating ? '#FBBC04' : 'gray'}
-                            />
-                          ))}
-                      </Box>
-                      <TestimonialText>
-                        Ficamos muito satisfeitos com a prestação de serviços do
-                        Humberto, foi tudo muito ágil e com contato facilitado. Correu
-                        tudo bem com a realização da nossa diligência. Obrigada!
-                      </TestimonialText>
-                    </TestimonialContent>
-                    <TestimonialAvatar src={''} name={'Ellen Florisbal'} />
-                  </Testimonial>
-                </SimpleGrid>
-              </Box>
-            </Slider>
-          </Box>
+          {/* <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            navigation={true}
+            modules={[Autoplay, Navigation]}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide> */}
+          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+            <Testimonial>
+              <TestimonialContent>
+                <Quotes size={28} weight="fill" />
+                <Box display="flex" mt="2" alignItems="center">
+                  {Array(5)
+                    .fill('')
+                    .map((_, i) => (
+                      <Star
+                        weight="fill"
+                        key={i}
+                        color={i < ReviewsGoogle.rating ? '#FBBC04' : 'gray'}
+                      />
+                    ))}
+                </Box>
+                <TestimonialText>Ótimo atendimento</TestimonialText>
+              </TestimonialContent>
+              <TestimonialAvatar src={''} name={'Nilza Silva'} />
+            </Testimonial>
+            <Testimonial>
+              <TestimonialContent>
+                <Quotes size={28} weight="fill" />
+                <Box display="flex" mt="2" alignItems="center">
+                  {Array(5)
+                    .fill('')
+                    .map((_, i) => (
+                      <Star
+                        weight="fill"
+                        key={i}
+                        color={i < ReviewsGoogle.rating ? '#FBBC04' : 'gray'}
+                      />
+                    ))}
+                </Box>
+                <TestimonialText>Advogado de excelência!</TestimonialText>
+              </TestimonialContent>
+              <TestimonialAvatar src={''} name={'Rosangela Rocha Alves'} />
+            </Testimonial>
+            <Testimonial>
+              <TestimonialContent>
+                <Quotes size={28} weight="fill" />
+                <Box display="flex" mt="2" alignItems="center">
+                  {Array(5)
+                    .fill('')
+                    .map((_, i) => (
+                      <Star
+                        weight="fill"
+                        key={i}
+                        color={i < ReviewsGoogle.rating ? '#FBBC04' : 'gray'}
+                      />
+                    ))}
+                </Box>
+                <TestimonialText>Super indico. Problema solucionado!</TestimonialText>
+              </TestimonialContent>
+              <TestimonialAvatar src={''} name={'Edileia Lopes'} />
+            </Testimonial>
+          </SimpleGrid>
+          {/* </SwiperSlide>
+            <SwiperSlide> */}
+          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+            <Testimonial>
+              <TestimonialContent>
+                <Quotes size={28} weight="fill" />
+                <Box display="flex" mt="2" alignItems="center">
+                  {Array(5)
+                    .fill('')
+                    .map((_, i) => (
+                      <Star
+                        weight="fill"
+                        key={i}
+                        color={i < ReviewsGoogle.rating ? '#FBBC04' : 'gray'}
+                      />
+                    ))}
+                </Box>
+                <TestimonialText>
+                  Excelência e qualidade no atendimento , recomendo sem duvidas.
+                </TestimonialText>
+              </TestimonialContent>
+              <TestimonialAvatar src={''} name={'Renan Araujo Films'} />
+            </Testimonial>
+            <Testimonial>
+              <TestimonialContent>
+                <Quotes size={28} weight="fill" />
+                <Box display="flex" mt="2" alignItems="center">
+                  {Array(5)
+                    .fill('')
+                    .map((_, i) => (
+                      <Star
+                        weight="fill"
+                        key={i}
+                        color={i < ReviewsGoogle.rating ? '#FBBC04' : 'gray'}
+                      />
+                    ))}
+                </Box>
+                <TestimonialText>
+                  Muito bom atendimento diferenciado um excelente profissional amei
+                </TestimonialText>
+              </TestimonialContent>
+              <TestimonialAvatar src={''} name={'Gi Gospel'} />
+            </Testimonial>
+            <Testimonial>
+              <TestimonialContent>
+                <Quotes size={28} weight="fill" />
+                <Box display="flex" mt="2" alignItems="center">
+                  {Array(5)
+                    .fill('')
+                    .map((_, i) => (
+                      <Star
+                        weight="fill"
+                        key={i}
+                        color={i < ReviewsGoogle.rating ? '#FBBC04' : 'gray'}
+                      />
+                    ))}
+                </Box>
+                <TestimonialText>
+                  Ficamos muito satisfeitos com a prestação de serviços do Humberto, foi
+                  tudo muito ágil e com contato facilitado. Correu tudo bem com a
+                  realização da nossa diligência. Obrigada!
+                </TestimonialText>
+              </TestimonialContent>
+              <TestimonialAvatar src={''} name={'Ellen Florisbal'} />
+            </Testimonial>
+          </SimpleGrid>
+          {/* </SwiperSlide>
+          </Swiper> */}
         </Stack>
       </Container>
     </>
