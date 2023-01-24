@@ -21,13 +21,7 @@ import {
 export function References() {
   return (
     <Container maxW={'6xl'}>
-      <Stack
-        py={8}
-        px={8}
-        spacing={{ base: 8, md: 14 }}
-        align={'center'}
-        direction={'column'}
-      >
+      <Stack spacing={{ base: 8, md: 14 }} align={'center'} direction={'column'}>
         <VStack spacing={4}>
           <Box
             backdropFilter="auto"
