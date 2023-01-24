@@ -125,7 +125,7 @@ export function Footer() {
           </Box>
           <Box>
             <Text textAlign="center" fontWeight="bold" color="#F7D67B" mt={5}>
-              Advogado Dr. Humberto Pedrosa | OAB/SP - 00.000
+              Advogado Dr. Humberto Pedrosa | OAB/SP - 439.777
             </Text>
           </Box>
         </Box>
