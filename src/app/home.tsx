@@ -1,5 +1,6 @@
 'use client';
 import { Box, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
+import { About } from './about';
 import { Comments } from './comments';
 import { Navbar } from './navbar';
 import { References } from './references';
@@ -10,7 +11,6 @@ export function Home() {
       bgImage={'/img/bgDivorcio.jpg'}
       height={'100%'}
       bgSize={'cover'}
-      bgPosition={'center'}
       bgAttachment={'fixed'}
       bgRepeat={'no-repeat'}
     >
@@ -18,8 +18,8 @@ export function Home() {
         bgGradient={'linear(to-l, rgba(23, 25, 35, 0.9), rgba(74, 85, 104, 0.9) 80%)'}
       >
         <Navbar />
-        <Stack direction={{ base: 'column', md: 'row' }} pt={[20, 16]}>
-          <Flex p={8} flex={1} align={'center'} justify={'center'}>
+        <Stack direction={{ base: 'column', md: 'row' }}>
+          <Flex p={6} flex={1} align={'center'} justify={'center'}>
             <Stack
               spacing={6}
               w={'full'}
@@ -47,12 +47,13 @@ export function Home() {
               h={{ base: 'full', md: '50rem' }}
               objectFit="contain"
               loading="lazy"
-              src={'/img/humberto.png'}
+              src={'/img/humberto2.png'}
             />
           </Flex>
         </Stack>
         <References />
         <Comments />
+        <About />
       </Box>
     </Box>
   );
