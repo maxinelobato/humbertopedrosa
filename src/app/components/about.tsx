@@ -1,15 +1,7 @@
 'user client';
-import {
-  Box,
-  Container,
-  Flex,
-  Heading,
-  Img,
-  Stack,
-  Text,
-  VStack,
-} from '@chakra-ui/react';
+import { Box, Container, Flex, Heading, Stack, Text, VStack } from '@chakra-ui/react';
 import { User } from 'phosphor-react';
+import Image from 'next/image';
 
 export function About() {
   return (
@@ -30,14 +22,15 @@ export function About() {
       </VStack>
       <Stack minH={'50vh'} direction={{ base: 'column-reverse', md: 'row-reverse' }}>
         <Flex p={4} flex={1} align={'center'} justify={'center'}>
-          <Img
-            rounded={'lg'}
-            shadow={'dark-lg'}
-            alt="Perfil"
-            objectFit="cover"
-            boxSize="lg"
-            src={'/img/humberto.webp'}
-          />
+          <Box rounded={'lg'} overflow={'hidden'} shadow={'dark-lg'}>
+            <Image
+              alt="About Humberto"
+              width={400}
+              height={300}
+              src={'/img/humberto.webp'}
+              priority
+            />
+          </Box>
         </Flex>
         <Flex flex={1} justifyContent="center" align="center" p={'4'}>
           <Box

@@ -1,9 +1,10 @@
 'use client';
-import { Box, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import { About } from './about';
 import { Comments } from './comments';
 import { Navbar } from './navbar';
 import { References } from './references';
+import Image from 'next/image';
 
 export function Home() {
   return (
@@ -43,10 +44,10 @@ export function Home() {
           <Flex flex={1}>
             <Image
               alt="Perfil"
-              w={'full'}
-              h={{ base: 'full', md: '50rem' }}
-              objectFit="contain"
+              width={600}
+              height={200}
               src={'/img/humberto2.webp'}
+              priority
             />
           </Flex>
         </Stack>
