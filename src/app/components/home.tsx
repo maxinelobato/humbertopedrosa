@@ -46,7 +46,6 @@ export function Home() {
               w={'full'}
               h={{ base: 'full', md: '50rem' }}
               objectFit="contain"
-              loading="lazy"
               src={'/img/humberto2.webp'}
             />
           </Flex>
