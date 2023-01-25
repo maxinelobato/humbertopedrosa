@@ -15,16 +15,7 @@ export function About() {
   return (
     <Container maxW={'7xl'} as={Stack} spacing={12} pb={8}>
       <VStack spacing={4}>
-        <Box
-          backdropFilter="auto"
-          backdropBlur="1rem"
-          shadow="2xl"
-          alignItems="center"
-          display="flex"
-          mt="2"
-          p={5}
-          rounded={'lg'}
-        >
+        <Box alignItems="center" display="flex" mt="2" p={5}>
           <User size={36} weight="fill" color="#F7D67B" />
           <Box
             ml="2"

@@ -23,16 +23,7 @@ export function References() {
     <Container maxW={'6xl'}>
       <Stack spacing={{ base: 8, md: 14 }} align={'center'} direction={'column'}>
         <VStack spacing={4}>
-          <Box
-            backdropFilter="auto"
-            backdropBlur="1rem"
-            shadow="2xl"
-            alignItems="center"
-            display="flex"
-            mt="2"
-            p={5}
-            rounded={'lg'}
-          >
+          <Box alignItems="center" display="flex" mt="2" p={5}>
             <Handshake size={36} weight="fill" color="#F7D67B" />
             <Box
               ml="2"

@@ -9,8 +9,8 @@ export function Home() {
   return (
     <Box
       bgImage={'/img/bgDivorcio.jpg'}
-      height={'100%'}
       bgSize={'cover'}
+      bgPos={'center'}
       bgAttachment={'fixed'}
       bgRepeat={'no-repeat'}
     >

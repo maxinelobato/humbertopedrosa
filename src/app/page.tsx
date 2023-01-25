@@ -1,6 +1,7 @@
 'use client';
-import { Footer } from './footer';
-import { Home } from './home';
+
+import { Footer } from './components/footer';
+import { Home } from './components/home';
 
 export default function Page() {
   return (
