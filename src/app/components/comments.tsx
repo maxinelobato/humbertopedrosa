@@ -138,9 +138,12 @@ export function Comments() {
                       />
                     ))}
                 </Box>
-                <TestimonialText>Ótimo atendimento</TestimonialText>
+                <TestimonialText>
+                  Super recomendo, Atendimento maravilhoso...Agradeço muito pela atenção
+                  q o Dr Humberto teve comigo!!!
+                </TestimonialText>
               </TestimonialContent>
-              <TestimonialAvatar src={''} name={'Nilza Silva'} />
+              <TestimonialAvatar src={''} name={'Loana Ferreira'} />
             </Testimonial>
             <Testimonial>
               <TestimonialContent>
@@ -156,9 +159,11 @@ export function Comments() {
                       />
                     ))}
                 </Box>
-                <TestimonialText>Advogado de excelência!</TestimonialText>
+                <TestimonialText>
+                  Ótimo atendimento, fui muito bem atendida. Recomendo !
+                </TestimonialText>
               </TestimonialContent>
-              <TestimonialAvatar src={''} name={'Rosangela Rocha Alves'} />
+              <TestimonialAvatar src={''} name={'Renata Leme'} />
             </Testimonial>
             <Testimonial>
               <TestimonialContent>

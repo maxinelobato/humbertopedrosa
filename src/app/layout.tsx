@@ -19,6 +19,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       */}
       <head />
       <body>
+        {/* LEADSTER - START*/}
+        <script
+          id="inline-script"
+          dangerouslySetInnerHTML={{
+            __html: ``,
+          }}
+        ></script>
+        {/* LEADSTER - END */}
         <ChakraProvider theme={theme}>{children}</ChakraProvider>
       </body>
     </html>
