@@ -8,7 +8,7 @@ import { References } from './references';
 export function Home() {
   return (
     <Box
-      bgImage={'/img/bgDivorcio.jpg'}
+      bgImage={'/img/bgDivorcio.webp'}
       bgSize={'cover'}
       bgPos={'center'}
       bgAttachment={'fixed'}
@@ -47,7 +47,7 @@ export function Home() {
               h={{ base: 'full', md: '50rem' }}
               objectFit="contain"
               loading="lazy"
-              src={'/img/humberto2.png'}
+              src={'/img/humberto2.webp'}
             />
           </Flex>
         </Stack>

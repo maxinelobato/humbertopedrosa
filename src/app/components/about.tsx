@@ -36,7 +36,7 @@ export function About() {
             alt="Perfil"
             objectFit="cover"
             boxSize="lg"
-            src={'/img/humberto.jpg'}
+            src={'/img/humberto.webp'}
           />
         </Flex>
         <Flex flex={1} justifyContent="center" align="center" p={'4'}>

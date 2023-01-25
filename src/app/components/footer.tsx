@@ -1,15 +1,15 @@
 import { Container, Box, Text, Button, Stack, VStack } from '@chakra-ui/react';
-import { AddressBook, At, InstagramLogo, LinkedinLogo, Phone } from 'phosphor-react';
+import { AddressBook, At, InstagramLogo, Phone } from 'phosphor-react';
 
 export function Footer() {
   return (
     <Box
-      bgImage={'/img/bgImage.png'}
-      bgSize={'cover'}
-      bgPos={'center'}
+      bgImage={'/img/bgImage.webp'}
+      bgSize={'contain'}
+      bgPos={'left'}
       bgRepeat={'no-repeat'}
     >
-      <Box bgGradient="linear(to-r, rgba(23, 25, 35, 0.9), rgba(74, 85, 104, 0.9) 80%)">
+      <Box bgGradient="linear(to-l, rgba(23, 25, 35, 0.9), rgba(74, 85, 104, 0.5) 80%)">
         <Container maxW="7xl" justifyContent="center" p={8}>
           <VStack>
             <Box alignItems="center" display="flex" mt="2" p={5}>
@@ -27,7 +27,7 @@ export function Footer() {
           </VStack>
           <Box>
             <Text mt={[3, 3, 5]} fontWeight="bold" textAlign="center" color="#F7D67B">
-              Quer falar diretamente comigo?
+              Fale diretamente comigo
             </Text>
             <Box py={{ base: 5, sm: 5, md: 8, lg: 8 }}>
               <Stack
