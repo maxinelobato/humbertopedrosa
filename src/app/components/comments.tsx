@@ -60,10 +60,10 @@ const TestimonialText = ({ children }: { children: ReactNode }) => {
   );
 };
 
-const TestimonialAvatar = ({ src, name }: { src: string; name: string }) => {
+const TestimonialAvatar = ({ name }: { name: string }) => {
   return (
     <Flex align={'center'} mt={8} direction={'column'}>
-      <Avatar loading="lazy" size="lg" src={src} mb={2}></Avatar>
+      <Avatar loading="lazy" size="lg" name={name} mb={2}></Avatar>
       <Stack spacing={-1} align={'center'}>
         <Text fontWeight={600}>{name}</Text>
       </Stack>
@@ -106,23 +106,7 @@ export function Comments() {
         </Stack>
       </Container>
       <Container maxW={'4xl'} pb={8}>
-        <Stack
-          direction={{ base: 'column', md: 'column' }}
-          spacing={{ base: 10, md: 4, lg: 10 }}
-        >
-          {/* <Swiper
-            spaceBetween={30}
-            centeredSlides={true}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-            navigation={true}
-            modules={[Autoplay, Navigation]}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-            <SwiperSlide> */}
+        <Stack direction={'column'} spacing={{ base: 10, md: 4, lg: 10 }}>
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
             <Testimonial>
               <TestimonialContent>
@@ -143,7 +127,7 @@ export function Comments() {
                   q o Dr Humberto teve comigo!!!
                 </TestimonialText>
               </TestimonialContent>
-              <TestimonialAvatar src={''} name={'Loana Ferreira'} />
+              <TestimonialAvatar name={'Loana Ferreira'} />
             </Testimonial>
             <Testimonial>
               <TestimonialContent>
@@ -163,7 +147,7 @@ export function Comments() {
                   Ótimo atendimento, fui muito bem atendida. Recomendo !
                 </TestimonialText>
               </TestimonialContent>
-              <TestimonialAvatar src={''} name={'Renata Leme'} />
+              <TestimonialAvatar name={'Renata Leme'} />
             </Testimonial>
             <Testimonial>
               <TestimonialContent>
@@ -181,11 +165,9 @@ export function Comments() {
                 </Box>
                 <TestimonialText>Super indico. Problema solucionado!</TestimonialText>
               </TestimonialContent>
-              <TestimonialAvatar src={''} name={'Edileia Lopes'} />
+              <TestimonialAvatar name={'Edileia Lopes'} />
             </Testimonial>
           </SimpleGrid>
-          {/* </SwiperSlide>
-            <SwiperSlide> */}
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
             <Testimonial>
               <TestimonialContent>
@@ -205,7 +187,7 @@ export function Comments() {
                   Excelência e qualidade no atendimento , recomendo sem duvidas.
                 </TestimonialText>
               </TestimonialContent>
-              <TestimonialAvatar src={''} name={'Renan Araujo Films'} />
+              <TestimonialAvatar name={'Renan Araujo Films'} />
             </Testimonial>
             <Testimonial>
               <TestimonialContent>
@@ -225,7 +207,7 @@ export function Comments() {
                   Muito bom atendimento diferenciado um excelente profissional amei
                 </TestimonialText>
               </TestimonialContent>
-              <TestimonialAvatar src={''} name={'Gi Gospel'} />
+              <TestimonialAvatar name={'Gi Gospel'} />
             </Testimonial>
             <Testimonial>
               <TestimonialContent>
@@ -247,11 +229,9 @@ export function Comments() {
                   realização da nossa diligência. Obrigada!
                 </TestimonialText>
               </TestimonialContent>
-              <TestimonialAvatar src={''} name={'Ellen Florisbal'} />
+              <TestimonialAvatar name={'Ellen Florisbal'} />
             </Testimonial>
           </SimpleGrid>
-          {/* </SwiperSlide>
-          </Swiper> */}
         </Stack>
       </Container>
     </>

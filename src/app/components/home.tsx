@@ -41,12 +41,12 @@ export function Home() {
               </Text>
             </Stack>
           </Flex>
-          <Flex flex={1}>
+          <Flex>
             <Image
               alt="Perfil"
               width={600}
-              height={200}
-              src={'/img/humberto2.webp'}
+              height={300}
+              src={'/img/humberto2.svg'}
               priority
             />
           </Flex>

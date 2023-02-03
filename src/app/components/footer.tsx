@@ -60,12 +60,12 @@ export function Footer() {
               <Text textAlign="center" fontWeight="bold" color="#F7D67B">
                 Siga o meu Instagram
               </Text>
-              <Box p={[5, 5, 8]} mb={-5}>
+              <Box py={{ base: 5, sm: 5, md: 8, lg: 8 }}>
                 <Stack
                   spacing={3}
                   justifyContent="center"
                   alignItems="center"
-                  direction="row"
+                  direction={['column', 'column', 'row']}
                 >
                   <Button
                     leftIcon={<InstagramLogo size={24} />}

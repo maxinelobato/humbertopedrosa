@@ -61,10 +61,11 @@ export function References() {
                   align={'center'}
                   py={5}
                   _hover={{
-                    bgColor: 'blackAlpha.400',
+                    bgColor: 'blackAlpha.700',
                     transition: 'all 0.5s ease-out',
                     rounded: 'lg',
                     boxShadow: 'lg',
+                    pointerEvents: 'auto',
                   }}
                 >
                   <Box color={'#F7D67B'} px={2}>
