@@ -4,7 +4,14 @@ import Image from 'next/image';
 export function Navbar() {
   return (
     <>
-      <Box w="full" backdropFilter="auto" backdropBlur="1rem" bgColor="blackAlpha.400">
+      <Box
+        w="full"
+        h={20}
+        backdropFilter="auto"
+        backdropBlur="1rem"
+        bgColor="blackAlpha.400"
+        boxShadow="lg"
+      >
         <VStack p={3} alignContent={'center'}>
           <Image
             width={150}

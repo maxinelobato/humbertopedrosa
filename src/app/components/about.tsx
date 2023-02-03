@@ -34,7 +34,7 @@ export function About() {
         </Flex>
         <Flex flex={1} justifyContent="center" align="center" p={'4'}>
           <Box
-            p={8}
+            p={6}
             backdropFilter="auto"
             backdropBlur="1rem"
             bgColor="blackAlpha.500"

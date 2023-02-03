@@ -20,7 +20,7 @@ export function Home() {
       >
         <Navbar />
         <Stack direction={{ base: 'column', md: 'row' }}>
-          <Flex p={6} flex={1} align={'center'} justify={'center'}>
+          <Flex p={2} flex={1} align={'center'} justify={'center'}>
             <Stack
               spacing={6}
               w={'full'}
