@@ -8,12 +8,9 @@ import {
   Stack,
   Container,
   Avatar,
-  VStack,
   SimpleGrid,
 } from '@chakra-ui/react';
-import { Heart, Quotes, Star } from 'phosphor-react';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Autoplay, Navigation } from 'swiper';
+import { Quotes, Star } from 'phosphor-react';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
   return <Box>{children}</Box>;
@@ -79,29 +76,18 @@ export function Comments() {
   return (
     <>
       <Container maxW={'6xl'} py={16} as={Stack} spacing={12}>
-        <VStack spacing={4}>
-          <Box alignItems="center" display="flex" mt="2" p={5}>
-            <Heart size={36} weight="fill" color="#F7D67B" />
-            <Box
-              ml="2"
-              color="whiteAlpha.800"
-              fontSize="2xl"
-              textAlign="center"
-              fontWeight="bold"
-            >
-              Avaliações dos Clientes
-            </Box>
-          </Box>
-        </VStack>
         <Stack spacing={0} align={'center'}>
           <Heading
-            fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
-            textAlign={{ base: 'center', md: 'center', lg: 'center' }}
+            fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+            textAlign={'center'}
           >
-            <Text color="whiteAlpha.800">Nosso atendimento e excelência</Text>{' '}
-            <Text color="#F7D67B" as="span" textShadow="#000 1px 1px">
-              sendo reconhecido no Google Review
+            <Text color="whiteAlpha.900">Veja o que os nossos</Text>{' '}
+            <Text color={'#F7D67B'} as={'span'} textShadow={'#000 1px 1px'}>
+              clientes
             </Text>{' '}
+            <Text fontSize={{ base: 'md', lg: 'lg' }} color={'#F7D67B'}>
+              Falam sobre o nosso atendimento
+            </Text>
           </Heading>
         </Stack>
       </Container>

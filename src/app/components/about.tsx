@@ -1,25 +1,10 @@
 'user client';
-import { Box, Container, Flex, Heading, Stack, Text, VStack } from '@chakra-ui/react';
-import { User } from 'phosphor-react';
+import { Box, Container, Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 
 export function About() {
   return (
     <Container maxW={'7xl'} as={Stack} spacing={12} pb={8}>
-      <VStack spacing={4}>
-        <Box alignItems="center" display="flex" mt="2" p={5}>
-          <User size={36} weight="fill" color="#F7D67B" />
-          <Box
-            ml="2"
-            color="whiteAlpha.800"
-            fontSize="2xl"
-            textAlign="center"
-            fontWeight="bold"
-          >
-            Conheça o Especialista
-          </Box>
-        </Box>
-      </VStack>
       <Stack minH={'50vh'} direction={{ base: 'column-reverse', md: 'row-reverse' }}>
         <Flex p={4} flex={1} align={'center'} justify={'center'}>
           <Box rounded={'lg'} overflow={'hidden'} shadow={'dark-lg'}>
@@ -33,25 +18,18 @@ export function About() {
           </Box>
         </Flex>
         <Flex flex={1} justifyContent="center" align="center" p={'4'}>
-          <Box
-            p={6}
-            backdropFilter="auto"
-            backdropBlur="1rem"
-            bgColor="blackAlpha.500"
-            shadow="lg"
-            rounded="lg"
-          >
+          <Box p={6}>
             <Stack
               spacing={6}
               w={'full'}
               maxW={'lg'}
               textAlign={{ base: 'center', md: 'justify' }}
             >
-              <Heading fontSize={{ base: 'lg', md: '2xl', lg: '3xl' }}>
-                <Text color="whiteAlpha.900">O trabalho do </Text>
-                <Text color={'#F7D67B'} textShadow={'#000 1px 1px'}>
-                  Dr. Humberto Pedroso
-                </Text>{' '}
+              <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                <Text color="whiteAlpha.900">Conheça o trabalho do</Text>{' '}
+                <Text color={'#F7D67B'} as={'span'} textShadow={'#000 1px 1px'}>
+                  Dr. Humberto
+                </Text>
               </Heading>
               <Text fontSize={{ base: 'md', lg: 'lg' }} color={'#F7D67B'}>
                 Se destaca pelo atendimento personalizado, marcado pela ética e pela

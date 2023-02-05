@@ -9,39 +9,20 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react';
-import {
-  Baby,
-  ForkKnife,
-  Handshake,
-  NotePencil,
-  Package,
-  Scales,
-} from 'phosphor-react';
+import { Baby, ForkKnife, NotePencil, Package, Scales } from 'phosphor-react';
 
 export function References() {
   return (
     <Container maxW={'6xl'}>
       <Stack spacing={{ base: 8, md: 14 }} align={'center'} direction={'column'}>
-        <VStack spacing={4}>
-          <Box alignItems="center" display="flex" mt="2" p={5}>
-            <Handshake size={36} weight="fill" color="#F7D67B" />
-            <Box
-              ml="2"
-              color="whiteAlpha.800"
-              fontSize="2xl"
-              textAlign="center"
-              fontWeight="bold"
-            >
-              Soluções para o seu Divórcio
-            </Box>
-          </Box>
-        </VStack>
-        <Heading
-          fontSize={{ base: 'lg', md: '2xl', lg: '3xl' }}
-          textAlign={{ base: 'center', md: 'center', lg: 'center' }}
-          maxW="4xl"
-        >
-          Iremos identificar como foi feito o seu Divórcio
+        <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} textAlign={'center'}>
+          <Text color="whiteAlpha.900">Soluções para o seu </Text>{' '}
+          <Text color={'#F7D67B'} as={'span'} textShadow={'#000 1px 1px'}>
+            Divórcio
+          </Text>{' '}
+          <Text fontSize={{ base: 'md', lg: 'lg' }} color={'#F7D67B'}>
+            Iremos identificar como foi feito o seu Divórcio
+          </Text>
         </Heading>
         <Box
           p={2}
@@ -56,18 +37,8 @@ export function References() {
             direction={{ base: 'column-reverse', md: 'column' }}
           >
             <Container maxW={'6xl'}>
-              <SimpleGrid columns={{ base: 2, md: 4 }} spacing={6}>
-                <VStack
-                  align={'center'}
-                  py={5}
-                  _hover={{
-                    bgColor: 'blackAlpha.700',
-                    transition: 'all 0.5s ease-out',
-                    rounded: 'lg',
-                    boxShadow: 'lg',
-                    pointerEvents: 'auto',
-                  }}
-                >
+              <SimpleGrid columns={{ base: 1, md: 4 }} spacing={[2, 6]}>
+                <VStack align={'center'} py={5}>
                   <Box color={'#F7D67B'} px={2}>
                     <Scales size={'4em'} weight="fill" />
                   </Box>
@@ -86,16 +57,7 @@ export function References() {
                     </Box>
                   </VStack>
                 </VStack>
-                <VStack
-                  align={'center'}
-                  py={5}
-                  _hover={{
-                    bgColor: 'blackAlpha.400',
-                    transition: 'all 0.5s ease-out',
-                    rounded: 'lg',
-                    boxShadow: 'lg',
-                  }}
-                >
+                <VStack align={'center'} py={5}>
                   <Box color={'#F7D67B'} px={2}>
                     <Scales size={'4em'} weight="fill" />
                   </Box>
@@ -114,16 +76,7 @@ export function References() {
                     </Box>
                   </VStack>
                 </VStack>
-                <VStack
-                  align={'center'}
-                  py={5}
-                  _hover={{
-                    bgColor: 'blackAlpha.400',
-                    transition: 'all 0.5s ease-out',
-                    rounded: 'lg',
-                    boxShadow: 'lg',
-                  }}
-                >
+                <VStack align={'center'} py={5}>
                   <Box color={'#F7D67B'} px={2}>
                     <Scales size={'4em'} weight="fill" />
                   </Box>
@@ -142,16 +95,7 @@ export function References() {
                     </Box>
                   </VStack>
                 </VStack>
-                <VStack
-                  align={'center'}
-                  py={5}
-                  _hover={{
-                    bgColor: 'blackAlpha.400',
-                    transition: 'all 0.5s ease-out',
-                    rounded: 'lg',
-                    boxShadow: 'lg',
-                  }}
-                >
+                <VStack align={'center'} py={5}>
                   <Box color={'#F7D67B'} px={2}>
                     <Scales size={'4em'} weight="fill" />
                   </Box>
@@ -194,17 +138,8 @@ export function References() {
             direction={{ base: 'column-reverse', md: 'column' }}
           >
             <Container maxW={'6xl'}>
-              <SimpleGrid columns={{ base: 2, md: 4 }} spacing={6}>
-                <VStack
-                  align={'center'}
-                  py={5}
-                  _hover={{
-                    bgColor: 'blackAlpha.400',
-                    transition: 'all 0.5s ease-out',
-                    rounded: 'lg',
-                    boxShadow: 'lg',
-                  }}
-                >
+              <SimpleGrid columns={{ base: 4, md: 4 }} spacing={6}>
+                <VStack align={'center'} py={5}>
                   <Box color={'#F7D67B'} px={2}>
                     <ForkKnife size={'4em'} weight="fill" />
                   </Box>
@@ -222,16 +157,7 @@ export function References() {
                     </Box>
                   </VStack>
                 </VStack>
-                <VStack
-                  align={'center'}
-                  py={5}
-                  _hover={{
-                    bgColor: 'blackAlpha.400',
-                    transition: 'all 0.5s ease-out',
-                    rounded: 'lg',
-                    boxShadow: 'lg',
-                  }}
-                >
+                <VStack align={'center'} py={5}>
                   <Box color={'#F7D67B'} px={2}>
                     <Baby size={'4em'} weight="fill" />
                   </Box>
@@ -249,16 +175,7 @@ export function References() {
                     </Box>
                   </VStack>
                 </VStack>
-                <VStack
-                  align={'center'}
-                  py={5}
-                  _hover={{
-                    bgColor: 'blackAlpha.400',
-                    transition: 'all 0.5s ease-out',
-                    rounded: 'lg',
-                    boxShadow: 'lg',
-                  }}
-                >
+                <VStack align={'center'} py={5}>
                   <Box color={'#F7D67B'} px={2}>
                     <Package size={'4em'} weight="fill" />
                   </Box>
@@ -276,16 +193,7 @@ export function References() {
                     </Box>
                   </VStack>
                 </VStack>
-                <VStack
-                  align={'center'}
-                  py={5}
-                  _hover={{
-                    bgColor: 'blackAlpha.400',
-                    transition: 'all 0.5s ease-out',
-                    rounded: 'lg',
-                    boxShadow: 'lg',
-                  }}
-                >
+                <VStack align={'center'} py={5}>
                   <Box color={'#F7D67B'} px={2}>
                     <NotePencil size={'4em'} weight="fill" />
                   </Box>

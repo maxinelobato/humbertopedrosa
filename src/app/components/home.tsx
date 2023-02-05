@@ -1,16 +1,16 @@
 'use client';
 import { Box, Flex, Heading, Stack, Text } from '@chakra-ui/react';
-import { About } from './about';
-import { Comments } from './comments';
-import { Navbar } from './navbar';
-import { References } from './references';
 import Image from 'next/image';
+import { About } from './About';
+import { Comments } from './Comments';
+import { Navbar } from './Navbar';
+import { References } from './References';
 
 export function Home() {
   return (
     <Box
       bgImage={'/img/bgDivorcio.webp'}
-      bgSize={'cover'}
+      bgSize={'100% 100%'}
       bgPos={'center'}
       bgAttachment={'fixed'}
       bgRepeat={'no-repeat'}
@@ -19,7 +19,7 @@ export function Home() {
         bgGradient={'linear(to-l, rgba(23, 25, 35, 0.9), rgba(74, 85, 104, 0.9) 80%)'}
       >
         <Navbar />
-        <Stack direction={{ base: 'column', md: 'row' }}>
+        <Stack direction={{ base: 'column', md: 'row' }} mt={['10', '-20']}>
           <Flex p={2} flex={1} align={'center'} justify={'center'}>
             <Stack
               spacing={6}

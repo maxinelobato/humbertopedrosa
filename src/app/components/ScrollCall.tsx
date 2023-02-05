@@ -1,16 +1,4 @@
-import {
-  Stack,
-  Icon,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Avatar,
-  AvatarBadge,
-  Text,
-  IconButton,
-  Link,
-} from '@chakra-ui/react';
+import { Stack, Icon, IconButton, Link } from '@chakra-ui/react';
 import { PhoneCall } from 'phosphor-react';
 
 export function ScrollCall() {
