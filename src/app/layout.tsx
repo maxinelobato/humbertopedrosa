@@ -23,14 +23,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
       <body>
         {/* GOOGLE TAG MANAGER - START */}
-        {/* <noscript>
+        <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=GTM-KGF2D2G`}
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
           />
-        </noscript> */}
+        </noscript>
         {/* GOOGLE TAG MANAGER - END */}
         <ChakraProvider theme={theme} resetCSS>
           <ScrollWhatsApp />
