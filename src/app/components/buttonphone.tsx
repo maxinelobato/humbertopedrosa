@@ -31,7 +31,7 @@ export function ButtonPhone() {
             _expanded={{ bg: 'red.600' }}
             isRound
           >
-            <Icon as={PhoneCall} w={8} h={8} />
+            <PhoneCall size={36} weight="fill" />
           </IconButton>
         </Link>
       </Stack>

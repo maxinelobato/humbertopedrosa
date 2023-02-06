@@ -31,7 +31,7 @@ export function ButtonWhatsApp() {
             _expanded={{ bg: 'green.600' }}
             isRound
           >
-            <Icon as={WhatsappLogo} w={8} h={8} />
+            <WhatsappLogo size={36} weight="fill" />
           </IconButton>
         </Link>
       </Stack>
