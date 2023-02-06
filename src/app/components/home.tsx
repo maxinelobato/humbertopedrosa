@@ -6,7 +6,7 @@ import { Comments } from './comments';
 import { Navbar } from './navbar';
 import { References } from './references';
 
-export function HomePage() {
+export function Home() {
   return (
     <Box
       bgImage={'/img/bgDivorcio.webp'}
