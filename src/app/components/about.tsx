@@ -1,17 +1,16 @@
 'user client';
-import { Box, Container, Flex, Heading, Stack, Text } from '@chakra-ui/react';
-import Image from 'next/image';
+import { Box, Container, Flex, Heading, Stack, Text, Image } from '@chakra-ui/react';
 
 export function About() {
   return (
-    <Container maxW={'7xl'} as={Stack} pb={8}>
+    <Container maxW={'7xl'} pb={8}>
       <Stack direction={{ base: 'column', md: 'row-reverse' }}>
         <Flex p={4} flex={1} align={'center'} justify={'center'}>
           <Box rounded={'lg'} overflow={'hidden'} shadow={'base'}>
             <Image
               alt="About Humberto"
-              width={400}
-              height={300}
+              objectFit="cover"
+              maxW={{ base: '100%', sm: '400px' }}
               src={'/img/humberto.webp'}
             />
           </Box>
