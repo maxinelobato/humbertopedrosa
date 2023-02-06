@@ -1,3 +1,4 @@
+'use client';
 import { Container, Box, Text, Button, Stack, VStack } from '@chakra-ui/react';
 import { AddressBook, At, InstagramLogo, Phone } from 'phosphor-react';
 
