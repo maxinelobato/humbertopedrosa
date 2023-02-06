@@ -15,6 +15,7 @@ export function ButtonPhone() {
       >
         <Link style={{ textDecoration: 'none' }} href="tel:5518991175010" isExternal>
           <IconButton
+            name="phone"
             color="whiteAlpha.900"
             aria-label="behavior"
             bgColor="red.500"

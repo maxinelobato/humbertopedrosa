@@ -19,6 +19,7 @@ export function ButtonWhatsApp() {
           isExternal
         >
           <IconButton
+            name="whatsapp"
             color="whiteAlpha.900"
             aria-label="behavior"
             bgColor="green.500"
