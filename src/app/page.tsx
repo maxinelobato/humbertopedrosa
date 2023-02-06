@@ -1,12 +1,12 @@
 'use client';
 
 import { Footer } from './components/Footer';
-import { Home } from './components/Home';
+import { HomePage } from './components/HomePage';
 
 export default function Page() {
   return (
     <>
-      <Home />
+      <HomePage />
       <Footer />
     </>
   );
