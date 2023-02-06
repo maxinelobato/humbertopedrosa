@@ -1,8 +1,8 @@
 'use client';
 import { ChakraProvider, extendTheme, ThemeConfig } from '@chakra-ui/react';
 import Script from 'next/script';
-import { ScrollCall } from './components/scrollcall';
-import { ScrollWhatsApp } from './components/scrollwhatsapp';
+import { ScrollCall } from './components/ScrollCall';
+import { ScrollWhatsApp } from './components/ScrollWhatsApp';
 
 const config: ThemeConfig = {
   initialColorMode: 'dark',
