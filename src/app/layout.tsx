@@ -3,7 +3,6 @@ import { ChakraProvider, extendTheme, ThemeConfig } from '@chakra-ui/react';
 // import Script from 'next/script';
 import { ScrollCall } from './components/ScrollCall';
 import { ScrollWhatsApp } from './components/ScrollWhatsApp';
-// import './styles.css';
 
 const config: ThemeConfig = {
   initialColorMode: 'dark',
