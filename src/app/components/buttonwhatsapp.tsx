@@ -1,5 +1,5 @@
 'use client';
-import { Stack, Icon, IconButton, Link } from '@chakra-ui/react';
+import { Stack, IconButton, Link } from '@chakra-ui/react';
 import { WhatsappLogo } from 'phosphor-react';
 
 export function ButtonWhatsApp() {
