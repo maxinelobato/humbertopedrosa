@@ -3,6 +3,7 @@ import { Box, Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import { About } from './about';
 import { ButtonCta } from './buttoncta';
+import { ButtonPhone } from './buttonphone';
 import { Comments } from './comments';
 import { Navbar } from './navbar';
 import { References } from './references';
@@ -20,8 +21,8 @@ export function Home() {
         bgGradient={'linear(to-l, rgba(23, 25, 35, 0.9), rgba(74, 85, 104, 0.9) 80%)'}
       >
         <Navbar />
-        <Stack direction={{ base: 'column', md: 'row' }} mt={['10', '-20']}>
-          <Flex p={2} flex={1} align={'center'} justify={'center'}>
+        <Stack direction={{ base: 'column', md: 'row' }} mt={['10', '0', '-20']}>
+          <Flex p={8} flex={1} align={'center'} justify={'center'}>
             <Stack
               spacing={6}
               w={'full'}
@@ -41,11 +42,11 @@ export function Home() {
                 que ele irá lhe ouvir e fazer o melhor para lhe ajudar.
               </Text>
               <Stack
-                maxW={'sm'}
                 spacing={{ base: 4, md: 6 }}
                 direction={{ base: 'column', sm: 'row' }}
               >
                 <ButtonCta />
+                <ButtonPhone />
               </Stack>
             </Stack>
           </Flex>

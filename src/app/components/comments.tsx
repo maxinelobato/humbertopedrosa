@@ -9,12 +9,11 @@ import {
   Container,
   Avatar,
   SimpleGrid,
-  VStack,
-  HStack,
   Center,
 } from '@chakra-ui/react';
 import { Quotes, Star } from 'phosphor-react';
 import { ButtonCta } from './buttoncta';
+import { ButtonPhone } from './buttonphone';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
   return <Box>{children}</Box>;
@@ -223,7 +222,14 @@ export function Comments() {
             </Testimonial>
           </SimpleGrid>
           <Center>
-            <ButtonCta />
+            <Stack
+              p={8}
+              spacing={{ base: 4, md: 6 }}
+              direction={{ base: 'column', sm: 'row' }}
+            >
+              <ButtonCta />
+              <ButtonPhone />
+            </Stack>
           </Center>
         </Stack>
       </Container>

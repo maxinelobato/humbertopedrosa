@@ -1,7 +1,6 @@
 'use client';
 import { ChakraProvider, extendTheme, ThemeConfig } from '@chakra-ui/react';
 import Script from 'next/script';
-import { ButtonPhone } from './components/buttonphone';
 import { ButtonWhatsApp } from './components/buttonwhatsapp';
 
 const config: ThemeConfig = {
@@ -42,7 +41,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* GOOGLE TAG MANAGER - END */}
         <ChakraProvider theme={theme} resetCSS>
           <ButtonWhatsApp />
-          <ButtonPhone />
           {children}
         </ChakraProvider>
       </body>

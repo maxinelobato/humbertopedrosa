@@ -1,19 +1,21 @@
 import { Button, Link } from '@chakra-ui/react';
+import { WhatsappLogo } from 'phosphor-react';
 
 export function ButtonCta() {
   return (
     <Button
-      colorScheme="yellow"
+      colorScheme="green"
       backdropFilter="auto"
       backdropBlur="8px"
       shadow="lg"
       size="lg"
       rounded={'full'}
       _hover={{
-        bgColor: 'yellow.400',
-        color: 'yellow.900',
+        bgColor: 'green.600',
+        color: 'whiteAlpha.900',
         transform: 'scale(1.1)',
       }}
+      leftIcon={<WhatsappLogo size={24} weight="fill" />}
     >
       <Link
         style={{ textDecoration: 'none' }}

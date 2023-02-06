@@ -1,36 +1,25 @@
-'use client';
-import { Stack, Icon, IconButton, Link } from '@chakra-ui/react';
+import { Button, Link } from '@chakra-ui/react';
 import { PhoneCall } from 'phosphor-react';
 
 export function ButtonPhone() {
   return (
-    <>
-      <Stack
-        position="fixed"
-        zIndex={999}
-        bottom="30px"
-        right="20px"
-        justifyContent="center"
-        alignItems="center"
-      >
-        <Link style={{ textDecoration: 'none' }} href="tel:5518991175010" isExternal>
-          <IconButton
-            name="phone"
-            color="whiteAlpha.900"
-            aria-label="behavior"
-            bgColor="red.500"
-            variant="solid"
-            w={14}
-            h={14}
-            shadow="base"
-            _hover={{ bg: 'red.600' }}
-            _expanded={{ bg: 'red.600' }}
-            isRound
-          >
-            <Icon as={PhoneCall} w={8} h={8} weight="fill" />
-          </IconButton>
-        </Link>
-      </Stack>
-    </>
+    <Button
+      colorScheme="red"
+      backdropFilter="auto"
+      backdropBlur="8px"
+      shadow="lg"
+      size="lg"
+      rounded={'full'}
+      _hover={{
+        bgColor: 'red.400',
+        color: 'whiteAlpha.900',
+        transform: 'scale(1.1)',
+      }}
+      leftIcon={<PhoneCall size={24} weight="fill" />}
+    >
+      <Link style={{ textDecoration: 'none' }} href="tel:5518991175010" isExternal>
+        Ligue para o Humberto
+      </Link>
+    </Button>
   );
 }

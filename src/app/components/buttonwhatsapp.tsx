@@ -8,7 +8,7 @@ export function ButtonWhatsApp() {
       <Stack
         position="fixed"
         zIndex={999}
-        bottom="100px"
+        bottom="30px"
         right="20px"
         justifyContent="center"
         alignItems="center"
@@ -19,7 +19,6 @@ export function ButtonWhatsApp() {
           isExternal
         >
           <IconButton
-            name="whatsapp"
             color="whiteAlpha.900"
             aria-label="behavior"
             bgColor="green.500"
