@@ -14,7 +14,7 @@ export function ButtonPhone() {
         alignItems="center"
       >
         <Link
-          id="call"
+          aria-label="Celular Humberto"
           style={{ textDecoration: 'none' }}
           href="tel:5518991175010"
           isExternal
