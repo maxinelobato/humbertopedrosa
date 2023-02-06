@@ -9,8 +9,12 @@ import {
   Container,
   Avatar,
   SimpleGrid,
+  VStack,
+  HStack,
+  Center,
 } from '@chakra-ui/react';
 import { Quotes, Star } from 'phosphor-react';
+import { ButtonCta } from './buttoncta';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
   return <Box>{children}</Box>;
@@ -218,6 +222,9 @@ export function Comments() {
               <TestimonialAvatar name={'Ellen Florisbal'} />
             </Testimonial>
           </SimpleGrid>
+          <Center>
+            <ButtonCta />
+          </Center>
         </Stack>
       </Container>
     </>

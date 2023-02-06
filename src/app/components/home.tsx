@@ -2,6 +2,7 @@
 import { Box, Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import { About } from './about';
+import { ButtonCta } from './buttoncta';
 import { Comments } from './comments';
 import { Navbar } from './navbar';
 import { References } from './references';
@@ -39,6 +40,13 @@ export function Home() {
                 <strong> Partilha de Bens</strong>? Entre em contato com o Dr. Humberto
                 que ele irá lhe ouvir e fazer o melhor para lhe ajudar.
               </Text>
+              <Stack
+                maxW={'sm'}
+                spacing={{ base: 4, md: 6 }}
+                direction={{ base: 'column', sm: 'row' }}
+              >
+                <ButtonCta />
+              </Stack>
             </Stack>
           </Flex>
           <Flex>

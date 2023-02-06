@@ -10,6 +10,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { Baby, ForkKnife, NotePencil, Package, Scales } from 'phosphor-react';
+import { ButtonCta } from './buttoncta';
 
 export function References() {
   return (
@@ -215,6 +216,9 @@ export function References() {
             </Container>
           </Flex>
         </Box>
+        <Stack spacing={{ base: 4, md: 6 }} direction={{ base: 'column', sm: 'row' }}>
+          <ButtonCta />
+        </Stack>
       </Stack>
     </Container>
   );
