@@ -4,16 +4,15 @@ import Image from 'next/image';
 
 export function About() {
   return (
-    <Container maxW={'7xl'} as={Stack} spacing={12} pb={8}>
-      <Stack minH={'50vh'} direction={{ base: 'column-reverse', md: 'row-reverse' }}>
+    <Container maxW={'7xl'} as={Stack} pb={8}>
+      <Stack direction={{ base: 'column', md: 'row-reverse' }}>
         <Flex p={4} flex={1} align={'center'} justify={'center'}>
-          <Box rounded={'lg'} overflow={'hidden'} shadow={'dark-lg'}>
+          <Box rounded={'lg'} overflow={'hidden'} shadow={'base'}>
             <Image
               alt="About Humberto"
               width={400}
               height={300}
               src={'/img/humberto.webp'}
-              priority
             />
           </Box>
         </Flex>

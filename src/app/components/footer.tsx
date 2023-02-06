@@ -1,32 +1,29 @@
 'use client';
-import { Container, Box, Text, Button, Stack, VStack } from '@chakra-ui/react';
-import { AddressBook, At, InstagramLogo, Phone } from 'phosphor-react';
+import { Box, Text, Button, Stack, Image, Heading, Flex } from '@chakra-ui/react';
+import { At, InstagramLogo, Phone } from 'phosphor-react';
 
 export function Footer() {
   return (
-    <Box
-      bgImage={'/img/bgImage.webp'}
-      bgSize={'contain'}
-      bgPos={'left'}
-      bgRepeat={'no-repeat'}
-    >
-      <Box bgGradient="linear(to-l, rgba(23, 25, 35, 0.9), rgba(74, 85, 104, 0.5) 80%)">
-        <Container maxW="7xl" justifyContent="center" p={8}>
-          <VStack>
-            <Box alignItems="center" display="flex" mt="2" p={5}>
-              <AddressBook size={36} weight="fill" color="#F7D67B" />
-              <Box
-                ml="2"
-                color="whiteAlpha.800"
-                fontSize="2xl"
-                textAlign="center"
-                fontWeight="bold"
-              >
-                Quer conhecer o meu trabalho melhor?
-              </Box>
-            </Box>
-          </VStack>
+    <Box bgGradient="linear(to-l, rgba(23, 25, 35, 0.9), rgba(74, 85, 104, 0.5) 100%)">
+      <Stack direction={{ base: 'column', md: 'row-reverse' }}>
+        <Flex flex={1}>
+          <Image
+            alt={'Login Image'}
+            objectFit={'cover'}
+            src={'/img/bgEscritorio.webp'}
+          />
+        </Flex>
+        <Flex flex={1} justifyContent="center" align="center" p={'4'}>
           <Box>
+            <Heading
+              fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
+              textAlign={'center'}
+            >
+              <Text color="whiteAlpha.900">Me acompanhe nas redes sociais e</Text>{' '}
+              <Text color={'#F7D67B'} as={'span'} textShadow={'#000 1px 1px'}>
+                conheça melhor o meu Trabalho
+              </Text>
+            </Heading>
             <Text mt={[3, 3, 5]} fontWeight="bold" textAlign="center" color="#F7D67B">
               Fale diretamente comigo
             </Text>
@@ -86,8 +83,8 @@ export function Footer() {
               </Text>
             </Box>
           </Box>
-        </Container>
-      </Box>
+        </Flex>
+      </Stack>
     </Box>
   );
 }
