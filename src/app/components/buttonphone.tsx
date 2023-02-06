@@ -2,7 +2,7 @@
 import { Stack, Icon, IconButton, Link } from '@chakra-ui/react';
 import { PhoneCall } from 'phosphor-react';
 
-export function ScrollCall() {
+export function ButtonPhone() {
   return (
     <>
       <Stack
@@ -13,7 +13,12 @@ export function ScrollCall() {
         justifyContent="center"
         alignItems="center"
       >
-        <Link style={{ textDecoration: 'none' }} href="tel:5518991175010" isExternal>
+        <Link
+          id="call"
+          style={{ textDecoration: 'none' }}
+          href="tel:5518991175010"
+          isExternal
+        >
           <IconButton
             color="whiteAlpha.900"
             aria-label="behavior"

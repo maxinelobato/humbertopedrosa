@@ -2,7 +2,7 @@
 import { Stack, Icon, IconButton, Link } from '@chakra-ui/react';
 import { WhatsappLogo } from 'phosphor-react';
 
-export function ScrollWhatsApp() {
+export function ButtonWhatsApp() {
   return (
     <>
       <Stack
@@ -14,6 +14,7 @@ export function ScrollWhatsApp() {
         alignItems="center"
       >
         <Link
+          id="whatsapp"
           style={{ textDecoration: 'none' }}
           href="https://api.whatsapp.com/send?phone=5518991175010&text=Ol%C3%A1%2C%20Dr.%20Humberto!%20Vim%20pelo%20site.%20Podemos%20conversar%3F%20"
           isExternal

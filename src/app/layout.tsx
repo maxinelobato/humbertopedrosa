@@ -1,8 +1,8 @@
 'use client';
 import { ChakraProvider, extendTheme, ThemeConfig } from '@chakra-ui/react';
 import Script from 'next/script';
-import { ScrollCall } from './components/ScrollCall';
-import { ScrollWhatsApp } from './components/ScrollWhatsApp';
+import { ButtonPhone } from './components/buttonphone';
+import { ButtonWhatsApp } from './components/buttonwhatsapp';
 
 const config: ThemeConfig = {
   initialColorMode: 'dark',
@@ -45,8 +45,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </noscript>
         {/* GOOGLE TAG MANAGER - END */}
         <ChakraProvider theme={theme} resetCSS>
-          <ScrollWhatsApp />
-          <ScrollCall />
+          <ButtonWhatsApp />
+          <ButtonPhone />
           {children}
         </ChakraProvider>
       </body>

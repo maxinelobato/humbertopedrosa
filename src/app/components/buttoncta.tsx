@@ -1,4 +1,4 @@
-import { Stack, Button, Link } from '@chakra-ui/react';
+import { Button, Link } from '@chakra-ui/react';
 
 export function ButtonCta() {
   return (
