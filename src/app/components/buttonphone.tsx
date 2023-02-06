@@ -13,12 +13,7 @@ export function ButtonPhone() {
         justifyContent="center"
         alignItems="center"
       >
-        <Link
-          aria-label="Celular Humberto"
-          style={{ textDecoration: 'none' }}
-          href="tel:5518991175010"
-          isExternal
-        >
+        <Link style={{ textDecoration: 'none' }} href="tel:5518991175010" isExternal>
           <IconButton
             color="whiteAlpha.900"
             aria-label="behavior"
@@ -31,7 +26,7 @@ export function ButtonPhone() {
             _expanded={{ bg: 'red.600' }}
             isRound
           >
-            <Icon as={PhoneCall} w={8} h={8} />
+            <Icon as={PhoneCall} w={8} h={8} weight="fill" />
           </IconButton>
         </Link>
       </Stack>

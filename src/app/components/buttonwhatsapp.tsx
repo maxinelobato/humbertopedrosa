@@ -14,7 +14,6 @@ export function ButtonWhatsApp() {
         alignItems="center"
       >
         <Link
-          aria-label="WhatsApp Humberto"
           style={{ textDecoration: 'none' }}
           href="https://api.whatsapp.com/send?phone=5518991175010&text=Ol%C3%A1%2C%20Dr.%20Humberto!%20Vim%20pelo%20site.%20Podemos%20conversar%3F%20"
           isExternal
