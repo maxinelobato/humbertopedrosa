@@ -1,8 +1,8 @@
 'use client';
 import { ChakraProvider, extendTheme, ThemeConfig } from '@chakra-ui/react';
-// import Script from 'next/script';
-import { ScrollCall } from './components/ScrollCall';
-import { ScrollWhatsApp } from './components/ScrollWhatsApp';
+import Script from 'next/script';
+import { ScrollCall } from './components/scrollcall';
+import { ScrollWhatsApp } from './components/scrollwhatsapp';
 
 const config: ThemeConfig = {
   initialColorMode: 'dark',
@@ -20,12 +20,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
+      {/* Google Tag Manager - START */}
+      <Script
+        id="inline-script"
+        dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N2VX9SG');`,
+        }}
+      ></Script>
+      {/* Google Tag Manager - END */}
       <head />
       <body>
         {/* GOOGLE TAG MANAGER - START */}
         <noscript>
           <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=GTM-KGF2D2G`}
+            src={`https://www.googletagmanager.com/ns.html?id=GTM-N2VX9SG`}
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
