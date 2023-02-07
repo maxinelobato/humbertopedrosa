@@ -11,6 +11,10 @@ export function Footer() {
             alt={'Login Image'}
             objectFit={'cover'}
             src={'/img/bgEscritorio.webp'}
+            maxW={{ base: '100%', md: '100%' }}
+            width={800}
+            height={'auto'}
+            loading={'lazy'}
           />
         </Flex>
         <Flex flex={1} justifyContent="center" align="center" p={'4'}>

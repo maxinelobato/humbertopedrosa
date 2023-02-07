@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           />
         </noscript>
         {/* GOOGLE TAG MANAGER - END */}
-        <ChakraProvider theme={theme} resetCSS>
+        <ChakraProvider theme={theme}>
           <ButtonWhatsApp />
           {children}
         </ChakraProvider>

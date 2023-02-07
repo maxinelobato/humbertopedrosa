@@ -10,8 +10,11 @@ export function About() {
             <Image
               alt="About Humberto"
               objectFit="cover"
-              maxW={{ base: '100%', sm: '400px' }}
               src={'/img/humberto.webp'}
+              maxW={{ base: '100%', md: '100%' }}
+              width={500}
+              height={600}
+              loading={'lazy'}
             />
           </Box>
         </Flex>
