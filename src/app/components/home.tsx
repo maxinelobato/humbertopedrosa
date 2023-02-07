@@ -12,7 +12,7 @@ export function Home() {
   return (
     <Box
       bgImage={'/img/bgDivorcio.webp'}
-      bgSize={'100% 100%'}
+      bgSize={'cover'}
       bgPos={'center'}
       bgAttachment={'fixed'}
       bgRepeat={'no-repeat'}
