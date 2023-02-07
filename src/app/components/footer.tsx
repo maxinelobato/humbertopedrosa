@@ -12,8 +12,8 @@ export function Footer() {
             objectFit={'cover'}
             src={'/img/bgEscritorio.webp'}
             maxW={{ base: '100%', md: '100%' }}
-            width={800}
-            height={'auto'}
+            width={750}
+            height={500}
             loading={'lazy'}
           />
         </Flex>
