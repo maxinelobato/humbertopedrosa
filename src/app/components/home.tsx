@@ -55,7 +55,7 @@ export function Home() {
               alt="Perfil"
               width={600}
               height={300}
-              src={'/img/humberto2.svg'}
+              src={'/img/humberto2.png'}
               priority
             />
           </Flex>
