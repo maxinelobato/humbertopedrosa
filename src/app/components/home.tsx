@@ -1,12 +1,12 @@
 'use client';
 import { Box, Flex, Heading, Stack, Text } from '@chakra-ui/react';
-import Image from 'next/image';
 import { About } from './about';
 import { ButtonCta } from './buttoncta';
 import { ButtonPhone } from './buttonphone';
 import { Comments } from './comments';
 import { Navbar } from './navbar';
 import { References } from './references';
+import Image from 'next/image';
 
 export function Home() {
   return (
