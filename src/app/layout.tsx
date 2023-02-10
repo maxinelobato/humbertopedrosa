@@ -1,6 +1,5 @@
 'use client';
 import { ChakraProvider, extendTheme, ThemeConfig } from '@chakra-ui/react';
-import type { NextWebVitalsMetric } from 'next/app';
 import Script from 'next/script';
 import { ButtonWhatsApp } from './components/buttonwhatsapp';
 
@@ -51,8 +50,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </body>
     </html>
   );
-}
-
-export function reportWebVitals(metric: NextWebVitalsMetric) {
-  console.log(metric);
 }
