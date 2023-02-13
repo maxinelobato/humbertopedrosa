@@ -13,26 +13,24 @@ export function ButtonWhatsApp() {
         justifyContent="center"
         alignItems="center"
       >
-        <Link
+        <IconButton
+          as={Link}
+          color="whiteAlpha.900"
+          aria-label="behavior"
+          bgColor="green.500"
+          variant="solid"
+          w={14}
+          h={14}
+          shadow="base"
+          _hover={{ bg: 'green.600' }}
+          _expanded={{ bg: 'green.600' }}
           style={{ textDecoration: 'none' }}
-          href="https://api.whatsapp.com/send?phone=5518991175010&text=Ol%C3%A1%2C%20Dr.%20Humberto!%20Vim%20pelo%20site.%20Podemos%20conversar%3F%20"
+          href="https://api.whatsapp.com/send?phone=5518991175010&text=Ol%C3%A1%2C%20Dr.%20Humberto!%20Vim%20pelo%20site%20de%20Divórcio.%20Podemos%20conversar%3F%20"
           isExternal
+          isRound
         >
-          <IconButton
-            color="whiteAlpha.900"
-            aria-label="behavior"
-            bgColor="green.500"
-            variant="solid"
-            w={14}
-            h={14}
-            shadow="base"
-            _hover={{ bg: 'green.600' }}
-            _expanded={{ bg: 'green.600' }}
-            isRound
-          >
-            <WhatsappLogo size={36} weight="fill" />
-          </IconButton>
-        </Link>
+          <WhatsappLogo size={36} weight="fill" />
+        </IconButton>
       </Stack>
     </>
   );

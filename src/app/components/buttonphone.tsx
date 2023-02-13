@@ -1,3 +1,4 @@
+'user client';
 import { Button, Link } from '@chakra-ui/react';
 import { PhoneCall } from 'phosphor-react';
 
